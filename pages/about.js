@@ -5,10 +5,16 @@ import Contact from 'components/contact'
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column'
 import Image from 'next/image'
 import eyecatch from 'images-local/about.jpg'
+import Meta from 'components/meta'
 
 export default function About () {
   return (
     <Container>
+      <Meta
+        pagetitle='About' pageDesc='About development activities'
+        pageImg={eyecatch.src} pageImgW={eyecatch.width} pageImgH={eyecatch.height}
+      />
+
       <Hero
         title='About'
         subtitle='About development activities'
@@ -21,7 +27,7 @@ export default function About () {
           sizes='(min-width:1152px) 1152px,100vw'
           style={{ width: '100%', height: 'auto' }}
           priority
-          placeholder="blur"
+          placeholder='blur'
         />
       </figure>
 
