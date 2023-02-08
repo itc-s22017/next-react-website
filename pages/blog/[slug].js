@@ -28,6 +28,7 @@ export default function Post ({ title, publish, content, eyecatch, categories, d
 
         <figure>
           <Image
+            key={eyecatch.url}
             src={eyecatch.url}
             alt=''
             style={{ width: '100%', height: 'auto' }}
