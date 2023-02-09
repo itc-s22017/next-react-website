@@ -2,6 +2,7 @@ import Hero from 'components/hero'
 import Container from 'components/container'
 import PostBody from 'components/post-body'
 import Contact from 'components/contact'
+import Accordion from 'components/accordion'
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column'
 import Image from 'next/image'
 import eyecatch from 'images-local/about.jpg'
@@ -55,6 +56,27 @@ export default function About () {
               今までと違うものを作ることで愛着がわいてきます。そこで興味を持ったことは小さなことでもいいから取り入れて、
               いいものを作れるようにしています。小さなヒントから新しいものを生み出すようなモノづくりは、これからも続けていきたいです。
             </p>
+
+            <h2>FAQ</h2>
+            <Accordion heading='プログラミングのポイントについて'>
+              <p>
+                プログラミングのポイントは、作りたいものを作ることです。楽しいことから思いつき、
+                目標とゴールを決め、そこに向かって様々な課題を設定しながら、プログラムを作っていきます
+              </p>
+            </Accordion>
+            <Accordion heading='プログラミングのポイントについて'>
+              <p>
+                プログラミングのポイントは、作りたいものを作ることです。楽しいことから思いつき、
+                目標とゴールを決め、そこに向かって様々な課題を設定しながら、プログラムを作っていきます
+              </p>
+            </Accordion>
+            <Accordion heading='プログラミングのポイントについて'>
+              <p>
+                プログラミングのポイントは、作りたいものを作ることです。楽しいことから思いつき、
+                目標とゴールを決め、そこに向かって様々な課題を設定しながら、プログラムを作っていきます
+              </p>
+            </Accordion>
+
           </PostBody>
         </TwoColumnMain>
 
